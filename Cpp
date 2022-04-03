@@ -1,0 +1,22 @@
+// Write a program that randomly generates an integer
+// between 6 and 18 inclusive, and display it.
+
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main()
+{
+    srand(time(0));
+    
+    const int max=18;
+    const int min=6;
+    int num= rand()%(max-min+1)+min;
+    
+    cout << num;
+    
+    return 0;
+    
+}
